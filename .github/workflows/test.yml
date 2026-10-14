@@ -1,0 +1,25 @@
+name: Test CLI
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+      - name: Run rate.py and verify the computed hourly rate against a known-correct value
+        run: |
+          OUT=$(python rate.py --net 60000 --tax 25 --expenses 0 --buffer 10 --weeks-off 4 --hours-per-week 40 --billable 70 --json)
+          echo "$OUT"
+          echo "$OUT" | python -c "
+          import json, sys
+          r = json.load(sys.stdin)
+          assert r['hourly_rate'] == 65.48, r
+          assert r['revenue_needed_per_year'] == 88000.0, r
+          assert r['billable_hours_per_year'] == 1344.0, r
+          print('PASS: rate.py matches the expected formula output')
+          "
