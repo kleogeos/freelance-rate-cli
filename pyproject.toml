@@ -1,0 +1,17 @@
+[project]
+name = "freelance-rate-cli"
+version = "1.0.0"
+description = "Calculate the hourly rate you need to charge as a freelancer. Zero dependencies."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+
+[project.scripts]
+freelance-rate = "rate:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+py-modules = ["rate"]
