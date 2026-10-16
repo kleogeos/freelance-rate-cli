@@ -46,7 +46,7 @@ Prefer a browser form? Use the free web version: [rate calculator](https://kleog
 
 Check a contract for missing clauses: [contract-checklist-cli](https://github.com/kleogeos/contract-checklist-cli) · Check if a crypto payment landed: [crypto-pay-cli](https://github.com/kleogeos/crypto-pay-cli) · Track billable hours: [freelance-time-cli](https://github.com/kleogeos/freelance-time-cli) and [freelance-expense-cli](https://github.com/kleogeos/freelance-expense-cli) for expense tracking · Turn a rate into a quote: [freelance-proposal-cli](https://github.com/kleogeos/freelance-proposal-cli)
 
-Need the paperwork beyond pricing — proposals, contracts, invoices, late-payment emails, client scripts? [Freelancer Starter Kit ($15, pay with crypto)](https://kleogeos.github.io/freelancer-tools/kit.html)
+Need the paperwork beyond pricing — proposals, contracts, invoices, late-payment emails, client scripts? [Freelancer Starter Kit ($15, crypto or Telegram Stars, no KYC)](https://kleogeos.github.io/freelancer-tools/kit.html)
 
 Free and will stay free. If it saved you time: [tip with crypto](https://kleogeos.github.io/freelancer-tools/donate.html).
 
